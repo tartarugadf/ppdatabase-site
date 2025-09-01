@@ -1,0 +1,64 @@
+/* ======= Base ======= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* ======= Navbar ======= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 15px;
+}
+nav a:hover {
+  color: #111827;
+}
+
+/* ======= Botões genéricos ======= */
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-dev { background: #111827; color: white; }
+.btn-free { background: #257B3A; color: white; }
+.btn-pro { background: #3E4095; color: white; }
+.btn-secondary {
+  background: white;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+.btn:hover { opacity: .9; }
+
+/* ======= Footer ======= */
+footer {
+  background: #111827;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer a { color: #6b7280; }
+footer a:hover { color: white; }

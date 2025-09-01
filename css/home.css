@@ -1,0 +1,238 @@
+/* ----------------- Estrutura Geral ----------------- */
+.corpo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ----------------- Estilo do Separador ----------------- */
+.separator {
+  border: 0;
+  border-top: 2px solid #ddd; /* Cor e espessura da linha */
+  margin: 2rem 0;  /* Espaço em cima e embaixo da linha */
+}
+
+
+/* ----------------- Seção Hero ----------------- */
+.hero-content {
+  display: flex;
+  justify-content: space-between;  /* Alinha a imagem e o texto lado a lado */
+  align-items: center;  /* Alinha verticalmente */
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;  /* Isso garante que o texto ocupe 50% da tela */
+  padding-right: 20px;  /* Espaçamento entre o texto e a imagem */
+}
+
+.hero-text h2 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-bottom: 20px;  /* Espaçamento abaixo do título */
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+.options { 
+  display: flex; 
+  gap: 40px; 
+  margin-bottom: 25px; 
+    justify-content: center;
+}
+
+.option { 
+  display: flex; 
+  flex-direction: column; 
+  font-size: 14px; 
+}
+
+.option strong { 
+  display: flex; 
+  align-items: center; 
+  font-size: 15px; 
+  margin-bottom: 3px; 
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens no início, meio e fim */
+  font-size: 15px;
+}
+
+.stats div {
+  text-align: center; /* Alinha os textos ao centro */
+}
+
+.stats div strong {
+  display: block;
+  font-size: 22px;
+  color: #065f46;
+}
+
+.image-box {
+  flex: 1;  /* Isso garante que a imagem ocupe 50% da tela */
+  max-width: 50%;
+}
+
+.img-home {
+  width: 100%;  /* A imagem vai ocupar toda a largura do container */
+  height: auto;  /* Mantém a proporção da imagem */
+  object-fit: cover;  /* A imagem vai cobrir o espaço sem distorcer */
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;  /* Espaçamento entre o botão e os elementos acima */
+}
+
+.btn-dev { 
+  background: #111827; 
+  color: white; 
+}
+
+.stats div {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.stats div strong {
+  font-weight: bold;
+}
+
+/* ----------------- Seções Free e Pro - Alinhamento Lado a Lado ----------------- */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* Espaço entre o conteúdo e a imagem */
+ 
+}
+
+/* Ajustes no conteúdo (Texto) nas seções Free e Pro */
+.section .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Ajustes nas imagens nas seções Free e Pro */
+.section .image-box {
+  flex: 1;
+  max-width: 50%;
+}
+
+.img-free, .img-pro {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------- Botões das Seções ----------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaçamento entre o ícone e o texto */
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.google-play-icon {
+  width: 20px; /* Tamanho do ícone */
+  height: auto;
+}
+
+/* Estilo para o botão de Download na Google Play */
+.btn-dev {
+  background: #111827;
+  color: white;
+}
+
+.btn-free {
+  background: #257B3A;
+  color: white;
+}
+
+.btn-pro {
+  background: #3E4095;
+  color: white;
+}
+
+.btn-secondary { background: white; border: 1px solid #d1d5db; color: #111827; }
+
+.btn:hover {
+  opacity: .9;
+}
+
+/* ----------------- Responsividade (Telas pequenas) ----------------- */
+@media (max-width: 768px) {
+  /* Seção Hero */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  /* Ajuste nas imagens */
+  .img-home {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-free, .img-pro {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Ajuste nas seções */
+  .section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10%;
+  }
+
+  .section .content, .section .image-box {
+    width: 100%;
+  }
+
+  /* Botões */
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

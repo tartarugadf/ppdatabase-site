@@ -1,0 +1,61 @@
+/* Container do formulário */
+.form-container {
+  max-width: 800px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.form-container h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #111827;
+}
+.form-container p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #1f2937;
+}
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.char-counter {
+  font-size: 13px;
+  color: #6b7280;
+  text-align: right;
+}
+
+/* Botão reutiliza .btn-dev do style.css */
+button[type="submit"] {
+  align-self: flex-start;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PPDataBase - Pro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/free.css"> 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>PPDataBase</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="free.html">PPDataBase Free</a>
+      <a href="pro.html">PPDataBase Pro</a>
+      <a href="privacePolicy.html">Privacidade</a>
+      <a href="/contactUs.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <main>
+
+  <!-- Carrossel -->
+  <div class="carrossel-container">
+    <button class="botao botao-esquerda" onclick="trocarImagem(-1)">&#10094;</button>
+
+    <div class="imagem">
+        <img id="img-carousel" src="images/telas/free1.jpeg" alt="Imagem inicial">
+    </div>
+    <div class="texto">
+        <p id="text-carousel">Texto correspondente à imagem 1</p>
+    </div>
+
+    <button class="botao botao-direita" onclick="trocarImagem(1)">&#10095;</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 PPDataBase — Todos os direitos reservados</p>
+    <p>Design by Tartaruga</p>
+  </footer>
+
+  <script src="js/carrosselFree.js"></script>
+</body>
+</html>

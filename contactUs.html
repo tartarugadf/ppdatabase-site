@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fale Conosco - PPDataBase</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>PPDataBase</h1>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/free.html">PPDataBase Free</a>
+      <a href="/pro.html">PPDataBase Pro</a>
+      <a href="/privacePolicy.html">Privacidade</a>
+      <a href="/contactUs.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <!-- Formulário -->
+  <main class="form-container">
+    <h2>Fale Conosco</h2>
+   <p>
+  Tem dúvidas, sugestões ou precisa de suporte? Envie sua mensagem para a equipe do PPDataBase usando o formulário abaixo ou pelo e-mail 
+  <a href="mailto:contato.ppdatabase@gmail.com">contato.ppdatabase@gmail.com</a>.
+</p>
+
+    <form id="contactForm" action="mailto:contato.ppdatabase@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="Nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="subject">Assunto:</label>
+      <select id="subject" name="Assunto" required>
+        <option value="">Selecione...</option>
+        <option value="Suporte">Suporte</option>
+        <option value="Duvida">Dúvida</option>
+        <option value="Comercial">Comercial</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="Mensagem" maxlength="2000" rows="8" required></textarea>
+      <div class="char-counter"><span id="charCount">0</span>/2000 caracteres</div>
+
+      <button type="submit" class="btn btn-dev">Enviar</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 PPDataBase — Todos os direitos reservados</p>
+    <p>Design by Tartaruga</p>
+  </footer>
+
+ <script src="/js/contact.js"></script>
+
+</body>
+</html>
